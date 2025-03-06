@@ -18,11 +18,9 @@ public class ApiAuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
-    @SuppressWarnings("unused")
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
-    @SuppressWarnings("unused")
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody LoginCredentials credentials) {
         try {
